@@ -1,24 +1,21 @@
-﻿namespace _20230721;
+﻿using _20230721.Pages;
+using System.Diagnostics;
+using System.Timers;
+
+namespace _20230721;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
+		
 	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
+	async void OnBotonSegundaPageClic( object sender, EventArgs e)
 	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		Debug.WriteLine("[EVENTO] Botón OnBotonSegundaPageClic presionado");
+		await Shell.Current.GoToAsync(nameof(SegundaPage));
 	}
+	
 }
 

@@ -42,7 +42,7 @@ namespace _20230721.Dibujable
             var anguloGrad = horaActual * 360 / 12;
             var anguloRad = Math.PI / 180.0 * anguloGrad;
             var longitudHorero = radioCirculo * 0.8;
-            PointF extremoManecilla = new PointF((float)(longitudHorero * Math.Sin(anguloRad)) + centroReloj.X, (float)(longitudHorero * Math.Cos(anguloRad)) + centroReloj.Y);
+            PointF extremoManecilla = new PointF((float)(longitudHorero * Math.Sin(anguloRad)) + centroReloj.X, (float)(-longitudHorero * Math.Cos(anguloRad)) + centroReloj.Y);
             return extremoManecilla;
         }
         private PointF GetManecillaMinuto(DateTime tiempoActual, int radioCirculo, PointF centroReloj)
@@ -50,7 +50,7 @@ namespace _20230721.Dibujable
             int minutoActual = tiempoActual.Minute;
             var anguloGrad = minutoActual * 360 / 60;
             var anguloRad = Math.PI / 180.0 * anguloGrad;
-            PointF extremoManecilla = new PointF((float)(radioCirculo * Math.Sin(anguloRad)) + centroReloj.X, (float)(radioCirculo * Math.Cos(anguloRad)) + centroReloj.Y);
+            PointF extremoManecilla = new PointF((float)(radioCirculo * Math.Sin(anguloRad)) + centroReloj.X, (float)(-radioCirculo * Math.Cos(anguloRad)) + centroReloj.Y);
             return extremoManecilla;
         }
         private PointF GetManecillaSegundo(DateTime tiempoActual, int radioCirculo, PointF centroReloj)
@@ -58,7 +58,7 @@ namespace _20230721.Dibujable
             int segundoActual = tiempoActual.Second;
             var anguloGrad = segundoActual * 360 / 60;
             var anguloRad = Math.PI / 180.0 * anguloGrad;
-            PointF extremoManecilla = new PointF((float)(radioCirculo * Math.Sin(anguloRad)) + centroReloj.X, (float)(radioCirculo * Math.Cos(anguloRad)) + centroReloj.Y);
+            PointF extremoManecilla = new PointF((float)(radioCirculo * Math.Sin(anguloRad)) + centroReloj.X, (float)(-radioCirculo * Math.Cos(anguloRad)) + centroReloj.Y);
             return extremoManecilla;
         }
     }
