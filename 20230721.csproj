@@ -48,7 +48,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="ZXing.Net.Maui.CG" Version="1.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Pages\SegundaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\TerceraPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
