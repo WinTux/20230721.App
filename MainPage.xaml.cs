@@ -21,6 +21,10 @@ public partial class MainPage : ContentPage
         Debug.WriteLine("[EVENTO] Botón OnBotonTerceraPageClic presionado");
         await Shell.Current.GoToAsync(nameof(TerceraPage));
     }
-
+    async void OnBotonCuartaPageClic(object sender, EventArgs e)
+    {
+        Debug.WriteLine("[EVENTO] Botón OnBotonCuartaPageClic presionado");
+        await Shell.Current.GoToAsync(nameof(CuartaPage));
+    }
 }
 

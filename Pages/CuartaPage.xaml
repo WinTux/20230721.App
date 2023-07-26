@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_20230721.Pages.CuartaPage"
+             xmlns:ctool="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             Title="CuartaPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Lienzo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <ctool:DrawingView x:Name="lienzo"
+                           BackgroundColor="LightGray"
+                           WidthRequest="300" HeightRequest="300"
+                           HorizontalOptions="Center"/>
+        <Image Source="" HeightRequest="200" HorizontalOptions="Center"/>
+        <Button Text=""/>
+    </VerticalStackLayout>
+</ContentPage>
