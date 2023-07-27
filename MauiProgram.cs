@@ -13,6 +13,7 @@ public static class MauiProgram
 			.UseMauiApp<App>()
 			.UseBarcodeReader()
 			.UseMauiCommunityToolkit()
+			.UseMauiMaps()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -21,6 +22,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<SegundaPage>();
         builder.Services.AddTransient<TerceraPage>();
         builder.Services.AddTransient<CuartaPage>();
+        builder.Services.AddTransient<QuintaPage>();
         return builder.Build();
 	}
 }

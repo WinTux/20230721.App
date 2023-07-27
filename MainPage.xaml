@@ -7,5 +7,6 @@
         <Button Text="Ir a reloj" Clicked="OnBotonSegundaPageClic"/>
         <Button Text="Ir a tercera Page" Clicked="OnBotonTerceraPageClic"/>
         <Button Text="Ir a Trazador" Clicked="OnBotonCuartaPageClic"/>
+        <Button Text="Ir a mapa" Clicked="OnBotonQuintaPageClic"/>
     </VerticalStackLayout>
 </ContentPage>
