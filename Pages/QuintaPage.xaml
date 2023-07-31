@@ -63,6 +63,51 @@
                         </ubica:Location>
                     </mapa:Polygon.Geopath>
                 </mapa:Polygon>
+                <mapa:Polyline StrokeColor="Brown" StrokeWidth="12">
+                    <mapa:Polyline.Geopath>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.504123733294726</x:Double>
+                                <x:Double>-68.13294253572535</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.504216175961957</x:Double>
+                                <x:Double>-68.13251962420675</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.503802284579127</x:Double>
+                                <x:Double>-68.13239034037733</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50411953135285</x:Double>
+                                <x:Double>-68.13131662721774</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Polyline.Geopath>
+                </mapa:Polyline>
+                <mapa:Circle StrokeColor="Black" StrokeWidth="12" FillColor="#88FFFFFF">
+                    <mapa:Circle.Center>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.503211967828378</x:Double>
+                                <x:Double>-68.13297078449901</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Circle.Center>
+                    <mapa:Circle.Radius>
+                        <Distance>
+                            <x:Arguments>
+                                <x:Double>30</x:Double>
+                            </x:Arguments>
+                        </Distance>
+                    </mapa:Circle.Radius>
+                </mapa:Circle>
             </mapa:Map.MapElements>
         </mapa:Map>
     </Grid>
