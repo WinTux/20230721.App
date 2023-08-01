@@ -6,4 +6,12 @@ public partial class SextaPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	public void OnBotonClic(object sender, EventArgs e)
+	{
+		if (video.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Playing)
+			video.Pause();
+		else
+			video.Play();
+	}
 }

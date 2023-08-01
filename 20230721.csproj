@@ -68,6 +68,9 @@
 	  <MauiXaml Update="Pages\SegundaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\SeptimaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\SextaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

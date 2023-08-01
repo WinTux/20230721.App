@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_20230721.Pages.SeptimaPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="SeptimaPage">
+    <Grid RowDefinitions="1*, Auto, 25, 14, 20" ColumnDefinitions="*,2*,Auto,300" RowSpacing="6" ColumnSpacing="6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="450"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <toolkit:MediaElement x:Name="video" WidthRequest="350" HeightRequest="350" Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                              ShouldAutoPlay="True" ShouldKeepScreenOn="True" ShouldShowPlaybackControls="True" Aspect="Fill"/>
+        <Button Grid.Column="1" x:Name="btn" Text="Play/Pause" HorizontalOptions="Center" Clicked="OnBotonClic" />
+        <Slider Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Minimum="0.0" Maximum="1.0" Rotation="0" WidthRequest="100" Value="{Binding video}"/>
+        <Label 
+            Text="Video de la Séptima PAge"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </Grid>
+</ContentPage>

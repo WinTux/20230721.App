@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_20230721.MainPage">
 
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="6">
         <Button Text="Ir a reloj" Clicked="OnBotonSegundaPageClic"/>
         <Button Text="Ir a tercera Page" Clicked="OnBotonTerceraPageClic"/>
         <Button Text="Ir a Trazador" Clicked="OnBotonCuartaPageClic"/>
         <Button Text="Ir a mapa" Clicked="OnBotonQuintaPageClic"/>
         <Button Text="Ir a multimedia" Clicked="OnBotonSextaPageClic"/>
+        <Button Text="Ir a multimedia 2" Clicked="OnBotonSeptimaPageClic"/>
     </VerticalStackLayout>
 </ContentPage>

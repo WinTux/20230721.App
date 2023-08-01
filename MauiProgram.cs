@@ -25,6 +25,7 @@ public static class MauiProgram
         builder.Services.AddTransient<CuartaPage>();
         builder.Services.AddTransient<QuintaPage>();
         builder.Services.AddTransient<SextaPage>();
+        builder.Services.AddTransient<SeptimaPage>();
         return builder.Build();
 	}
 }
