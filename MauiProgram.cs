@@ -14,7 +14,8 @@ public static class MauiProgram
 			.UseBarcodeReader()
 			.UseMauiCommunityToolkit()
 			.UseMauiMaps()
-			.ConfigureFonts(fonts =>
+            .UseMauiCommunityToolkitMediaElement()
+            .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
@@ -23,6 +24,7 @@ public static class MauiProgram
         builder.Services.AddTransient<TerceraPage>();
         builder.Services.AddTransient<CuartaPage>();
         builder.Services.AddTransient<QuintaPage>();
+        builder.Services.AddTransient<SextaPage>();
         return builder.Build();
 	}
 }
